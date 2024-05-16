@@ -1,0 +1,68 @@
+object Form2: TForm2
+  Left = 679
+  Height = 493
+  Top = 155
+  Width = 632
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'Sistemas Lineares'
+  ClientHeight = 493
+  ClientWidth = 632
+  Font.CharSet = ANSI_CHARSET
+  Font.Color = clBlack
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnShow = FormShow
+  Position = poDesktopCenter
+  LCLVersion = '2.2.2.0'
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 224
+    Top = 8
+    Width = 617
+    Caption = 'Solução do Sistema'
+    ClientHeight = 206
+    ClientWidth = 613
+    TabOrder = 0
+    object StringGrid1: TStringGrid
+      Left = 8
+      Height = 200
+      Top = 8
+      Width = 597
+      ColCount = 16
+      RowCount = 15
+      TabOrder = 0
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 8
+    Height = 224
+    Top = 261
+    Width = 617
+    Caption = 'Matriz Inversa'
+    ClientHeight = 206
+    ClientWidth = 613
+    TabOrder = 1
+    object StringGrid2: TStringGrid
+      Left = 8
+      Height = 200
+      Top = 6
+      Width = 597
+      ColCount = 16
+      RowCount = 15
+      TabOrder = 0
+    end
+  end
+  object Label1: TLabel
+    Left = 18
+    Height = 13
+    Top = 240
+    Width = 65
+    Caption = 'Determinante'
+    ParentColor = False
+  end
+end

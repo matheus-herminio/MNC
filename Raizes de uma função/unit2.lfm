@@ -1,0 +1,53 @@
+object Form2: TForm2
+  Left = 352
+  Height = 240
+  Top = 32
+  Width = 360
+  Caption = 'Raízes de funções reais com uma variável real'
+  ClientHeight = 240
+  ClientWidth = 360
+  Font.Height = -10
+  Font.Name = 'Tahoma'
+  Position = poDesktopCenter
+  LCLVersion = '2.2.2.0'
+  object Chart1: TChart
+    Left = 0
+    Height = 240
+    Top = 0
+    Width = 360
+    AxisList = <    
+      item
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+        Title.LabelBrush.Style = bsClear
+      end    
+      item
+        Alignment = calBottom
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelBrush.Style = bsClear
+      end>
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Legend.Visible = True
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlack
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    Title.Visible = True
+    Align = alClient
+    object Chart1LineSeries1: TLineSeries
+      Title = 'Função'
+      LinePen.Color = clRed
+    end
+    object Chart1LineSeries2: TLineSeries
+      Title = 'Raiz'
+      Pointer.Brush.Color = clGreen
+      Pointer.Style = psCircle
+      Pointer.Visible = True
+      ShowPoints = True
+    end
+  end
+end
